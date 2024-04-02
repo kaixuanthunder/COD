@@ -42,8 +42,6 @@ int main(int argc, char const *argv[])
         if (shmctl(shmid, IPC_RMID, nullptr) == -1) {
             std::cerr << "Failed to delete shared memory" << std::endl;
             return 1;
-        }
-        }
-    }
+        }}}
     return 0;
 }
